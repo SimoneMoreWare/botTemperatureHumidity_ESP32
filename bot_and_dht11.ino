@@ -30,7 +30,7 @@ void setup() {
 }
 
 void loop() {
-  String msg="Ciao, la temperatura e' pari a  ";;
+  String msg="Ciao, la temperatura e' pari a  ";
   if (millis() - ultima_chiamata > intervallo) { //se il valore del timer "millis" - l'ultimo valore in millisecondi di quando abbiamo eseguito le istruzioni, è maggiore del tempo di attesa "intervallo", allora esegui le istruzioni
     float humi  = dht_sensor.readHumidity();// leggo l'umidità
     float tempC = dht_sensor.readTemperature();//leggo la temperatura in gradi celsius
